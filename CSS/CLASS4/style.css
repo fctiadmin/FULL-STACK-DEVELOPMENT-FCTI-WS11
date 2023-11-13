@@ -1,0 +1,19 @@
+h1:nth-of-type(odd){
+	/* border:4px groove red; */
+	/* border-style:groove; */
+	/* border-color:red; */
+	/* border-width:6px; */
+	/* border-radius:10px; */
+	
+	/* border-bottom:2px solid red; */
+	/* border-left:2px solid red; */
+	
+}
+.box{
+	width:250px;
+	height:300px;
+	background:green;
+	border-top-right-radius:50%;
+	border-bottom-left-radius:50%;
+	cursor:copy;
+}
