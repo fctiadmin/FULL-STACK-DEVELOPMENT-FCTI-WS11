@@ -1,0 +1,68 @@
+body{
+    background-color: #ddd;
+}
+
+.login-container{
+    width:400px;
+    height:300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    padding:30px;
+    top:23%;
+    left:30%;
+    position: absolute;
+    
+}
+
+.login-container input{
+    margin:10px 0px;
+    display: block;
+    width:100%;
+    padding:10px 5px;
+    border:1px solid rgb(235, 227, 227);
+    outline:none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#btn{
+    font-size: 22px;
+    color:white;
+    background-color: #1877f2;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    cursor: pointer;
+    transition:0.3s;
+    width:103%;
+}
+
+#btn:hover{
+    background-color: #085bc9;
+}
+#email:focus,#password:focus{
+ border:1px solid #1877f2;
+}
+#forgotten{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color:#1877f2;
+}
+#forgotten:hover{
+    text-decoration: underline;
+}
+.btn-create{
+    text-align: center;
+    margin: 20px 0px;
+}
+.btn-create a{
+    background: rgb(3, 171, 3);
+    color:white;
+    padding:8px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 4px;
+ 
+}
