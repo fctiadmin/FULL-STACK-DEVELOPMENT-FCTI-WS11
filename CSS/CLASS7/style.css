@@ -1,0 +1,75 @@
+.box{
+    width:280px;
+    height:350px;
+    border:1px solid rgba(77, 78, 81, 0.3);
+   position: absolute;
+   top:20%;
+   left:38%;
+   transform: scale(1.1);
+   font-family: noto sans;
+border-radius: 8px;
+}
+.box p{
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -1px;
+
+}
+.box p .g1{
+    font-size: 30px;
+    color:rgb(66,133,244)
+}
+.box p .o1{
+    color:rgb(234, 67, 53);
+   font-size: 24px;
+}
+.box p .o2{
+    color:rgb(251, 188, 5);
+   font-size: 24px;
+}
+.box p .g2{
+    color:rgb(66,133,244);
+   font-size: 24px;
+}
+.box p .l{
+    color:rgb(52, 168, 83);
+   font-size: 24px;
+}
+.box p .e{
+    color:rgb(234, 67, 53);
+   font-size: 24px;
+}
+.box h1{
+    text-align: center;
+    font-size: 20px;
+}
+.box h3{
+    text-align: center;
+    font-size: 13px;
+}
+.box .input-group{
+    text-align: center;
+}
+.box .input-group input{
+    border-radius: 5px;
+    padding: 10px 10px;
+   border:1px solid rgba(0,0,0,0.3);
+   font-size: 16px;
+}
+.box .input-group input:focus{
+    border: 1px solid rgb(66,133,244);
+}
+.box .btn{
+    text-align: right;
+    position: absolute;
+    right:45px;
+    margin-top:25px;
+}
+.box .btn button{
+    padding:8px 15px;
+    color:white;
+    background: rgb(23, 132, 247);
+    border:none;
+    outline:none;
+    border-radius: 4px;
+}
