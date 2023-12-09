@@ -1,0 +1,25 @@
+.container{
+    width: 500px;
+    height:300px;
+   
+    border: 1px solid red;
+    padding:25px;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+    width: 20px;
+    
+  }
+ ::-webkit-scrollbar-thumb{
+    background-image: url('icon.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(rgba(207, 2, 121,1),rgba(207, 118, 2,1));  */
+    border-radius:8px;
+    
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  } 
