@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: gray;
+}
+nav{
+    background: rgb(2, 22, 57);
+    padding:20px 30px;
+    height:60px;
+    
+}
+nav label.logo{
+    color:white;
+    font-size: 20px;
+    float: left;
+    line-height: 60px;
+}
+nav ul{
+    margin-left:200px;
+    float: right;
+    line-height: 60px;
+}
+nav ul li{
+    display: inline-block;
+    margin:0 10px;
+}
+nav ul li a{
+    color:white;
+    font-size: 18px;
+}
+.bar-btn{
+    color:white;
+    font-size: 20px;
+    float: right;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+nav ul li a:hover,.active{
+    color:rgb(255, 0, 0);
+}
+
+
+
+
+
+.home{
+    max-width: 1300px;
+    margin: 0 auto;
+    height: auto;
+    padding: 20px 40px;
+}
+.home .home_row{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+	align-items: center;
+}
+.home .home_row .home_col .head_line{
+    color: rgb(2, 22, 57);
+    font-size: 35px;
+    font-weight: 600;
+}
+.home .home_row .home_col .details{
+    padding: 10px 0px;
+    font-size: 20px;
+    color: black;
+}
+.home .home_row .home_col .btn_group {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.home .home_row .home_col .btn_group button{
+    padding: 12px 22px;
+    border: none;
+    background: linear-gradient( to left , rgb(2, 22, 57) , rgb(7, 51, 129));
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    position: 200%;
+    transition: all .4s ease-in-out;
+}
+.home .home_row .home_col .img img{
+    width: 600px;
+    height: auto;
+    border: 2px solid rgb(2, 22, 57);
+    border-radius: 8px;
+}
+
+
+
+
+
+@media(max-width: 1178px){
+    .home .home_row .home_col .img img{
+        width: 400px;
+
+    }
+}
+
+@media(max-width:992px){
+    .bar-btn{
+        display:block;
+        position: relative;
+    }
+    nav ul{
+        background: black;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left:-1000px;
+        top:100px;
+        margin-left:0;
+        text-align: center;
+        transition: 0.5s;
+
+    }
+    nav ul li{
+        display: block;
+    }
+ 
+    #check:checked ~ ul{
+        left:0;
+    }
+    .bar-btn::before{
+        content:" \2630";
+        position: absolute;
+        left:0;
+        top:0; 
+        display: block;
+    }
+   #check:checked ~ .bar-btn::before{
+    display: none;
+   }
+    .bar-btn::after{
+        content:" \2573";
+        position: absolute;
+        left:0;
+        top:0;
+       display: none;
+    }
+    #check:checked ~ .bar-btn::after{
+        display: block;
+       }
+
+       .home .home_row{
+        flex-wrap: wrap;
+    }
+    .home .home_row .home_col .img img{
+        width: 100%;
+
+    }
+}
